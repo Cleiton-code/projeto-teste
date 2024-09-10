@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computador helios 300",
+      "price": 9.5,
+      "category": "Eletronico"
+    },
+    {
+      "id": 2,
+      "name": "Camiseta GG azul",
+      "price": 450,
+      "category": "Nike"
+    },
+    {
+      "id": 1,
+      "name": "Copo",
+      "price": 600,
+      "category": "Stantaley"
+    }
+  ]
+}

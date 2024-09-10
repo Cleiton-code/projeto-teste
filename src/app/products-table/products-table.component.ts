@@ -1,5 +1,6 @@
+import { Product } from './../Product';
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../Product';
+
 import { ProductService } from '../product.service';
 
 @Component({
@@ -18,5 +19,10 @@ export class ProductsTableComponent implements OnInit{
       next: data => this.products = data
     }
     );
+  }
+  delete(product: Product){
+    this.service.delete(product).subscribe({
+      next: () => this.loadProducts()
+    })
   }
 }
