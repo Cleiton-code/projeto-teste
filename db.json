@@ -11,6 +11,12 @@
       "name": "Copo",
       "price": 600,
       "category": "Stantaley"
+    },
+    {
+      "id": 3,
+      "name": "celular",
+      "price": "1500",
+      "category": "Eletrônico"
     }
   ]
 }

@@ -9,12 +9,16 @@ import { ProductsTableComponent } from './products-table/products-table.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsTableComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

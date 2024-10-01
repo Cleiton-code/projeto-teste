@@ -4,7 +4,7 @@
 
 
   <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <label for="exampleFormControlInput1" class="form-label">Nome</label>
     <input formControlName = "name"
     type="text"
     class="form-control"
@@ -12,7 +12,7 @@
     placeholder="Digite o seu nome">
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Price</label>
+    <label for="exampleFormControlInput1" class="form-label">Preço</label>
     <input formControlName = "price"
      type="text"
      class="form-control"
@@ -20,7 +20,7 @@
      placeholder="Digite o preço">
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Category</label>
+    <label for="exampleFormControlInput1" class="form-label">Categoria</label>
     <input formControlName = "category"
      type="text"
       class="form-control"
@@ -28,7 +28,9 @@
       placeholder="Digite a categoria">
   </div>
 
-<button type="button" class="btn btn-primary" (click)="update()">Salvar</button>
+<button *ngIf="isEditing" type="button" class="btn btn-primary" (click)="update()">Salvar</button>
+
+<button *ngIf="!isEditing" type="button" class="btn btn-primary" (click)="save()">Criar</button>
 
 </form>
 </div>
